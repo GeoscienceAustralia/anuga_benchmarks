@@ -1,0 +1,8 @@
+{
+    "arch": "x86_64", 
+    "cpu": "Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz", 
+    "machine": "bottineau", 
+    "os": "Linux 3.13.0-46-generic", 
+    "ram": "8169540", 
+    "version": 1
+}

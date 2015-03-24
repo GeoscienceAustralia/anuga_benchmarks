@@ -1,0 +1,32 @@
+{
+    "commit_hash": "77765cb68800045bfb977a82820c4769e4692986", 
+    "date": 1427167097000, 
+    "params": {
+        "arch": "x86_64", 
+        "cpu": "Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz", 
+        "gdal": null, 
+        "machine": "bottineau", 
+        "matplotlib": null, 
+        "netcdf4": null, 
+        "nose": null, 
+        "numpy": null, 
+        "os": "Linux 3.13.0-46-generic", 
+        "python": "2.7", 
+        "ram": "8169540", 
+        "scipy": null
+    }, 
+    "profiles": {}, 
+    "python": "2.7", 
+    "requirements": {
+        "gdal": null, 
+        "matplotlib": null, 
+        "netcdf4": null, 
+        "nose": null, 
+        "numpy": null, 
+        "scipy": null
+    }, 
+    "results": {
+        "benchmarks.TimeSuite.time_evolve": 1.9713989289999998
+    }, 
+    "version": 1
+}

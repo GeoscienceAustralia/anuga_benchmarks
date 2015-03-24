@@ -2,9 +2,9 @@
     "version": 1,
     "project": "anuga_core",
     "project_url": "http://anuga.anu.edu.au/",
-    "repo": "https://github.com/stoiver/anuga_core.git",
-    "environment_type": "conda",.
-    "show_commit_url": "http://github.com/stoiver/anuga_core/commit/",
+    "repo": "https://github.com/geoscienceaustralia/anuga_core.git",
+    "environment_type": "conda",
+    "show_commit_url": "http://github.com/geoscienceaustralia/anuga_core/commit/",
     "pythons": ["2.7"],
     "matrix": {
          "numpy": [],

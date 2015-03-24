@@ -1,0 +1,15 @@
+{
+    "benchmarks.TimeSuite.time_evolve": {
+        "code": "def time_evolve(self):\n\n    import anuga\n\n    mesh_filename = \"benchmarks/merimbula_10785_1.tsh\"\n    x0 = 756000.0 ; x1 = 756500.0; yieldstep = 10.0; finaltime = 50.0\n\n    domain = anuga.create_domain_from_file(mesh_filename)\n    domain.set_quantity('stage', Set_Stage(x0, x1, 1.0))\n\n    domain.set_name()\n    domain.set_store(False)\n    domain.set_flow_algorithm('DE0')\n\n    Br = anuga.Reflective_boundary(domain)      # Solid reflective wall\n    from math import sin\n    Bts = anuga.Transmissive_n_momentum_zero_t_momentum_set_stage_boundary(domain, lambda t: 10*sin(t/200))\n\n    domain.set_boundary({'outflow' :Br, 'inflow' :Br, 'inner' :Br, 'exterior' :Br, 'open' :Bts})\n\n    for t in domain.evolve(yieldstep= yieldstep, finaltime=finaltime):\n        #domain.write_time()\n        pass\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.TimeSuite.time_evolve", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 0, 
+        "timeout": 240.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "version": 1
+}
